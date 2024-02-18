@@ -22,8 +22,8 @@ Interestingly enough, the possessive particle 的 is basically entirely responsi
 taking top spot in the frequency rankings.
 
 Additionally, through data compiled by reddit user u/LeChatParle
-([without tones](https://www.reddit.com/r/ChineseLanguage/comments/nbfa39/the_most_and_least_dense_syllables_in_mandarin_in/),
-[with tones](https://www.reddit.com/r/ChineseLanguage/comments/ofh5zi/homophone_density_of_top_20_syllables_in_mandarin/)),
+([with tones](https://www.reddit.com/r/ChineseLanguage/comments/ofh5zi/homophone_density_of_top_20_syllables_in_mandarin/),
+[without tones](https://www.reddit.com/r/ChineseLanguage/comments/nbfa39/the_most_and_least_dense_syllables_in_mandarin_in/)),
 we see that the syllable frequencies vary considerable when we weight them by corpus occurrence as
 opposed to character occurrence.
 
