@@ -8,8 +8,11 @@ URL_SYLLABLE_TONE = 'https://lingua.mtsu.edu/chinese-computing/phonology/syllabl
 URL_SYLLABLE = 'https://lingua.mtsu.edu/chinese-computing/phonology/syllable.php'
 FILENAME_SYLLABLE_TONE = 'syllable_tone.pkl'
 FILENAME_SYLLABLE = 'syllable.pkl'
+SORTED_FREQS_TONE_FILENAME = 'sorted_freqs_tone.pkl'
+SORTED_FREQS_FILENAME = 'sorted_freqs.pkl'
 
 filename = FILENAME_SYLLABLE_TONE if USE_TONE else FILENAME_SYLLABLE
+sorted_freqs_filename = SORTED_FREQS_TONE_FILENAME if USE_TONE else SORTED_FREQS_FILENAME
 
 def scrape_data():
     """Scrape data from website table."""
@@ -54,8 +57,8 @@ def analyze_data():
         items = syllable_to_freq.items()
         sorted_freqs = sorted(items, key=lambda x: x[1], reverse=True)
 
-        return sorted_freqs
-
+        with open(sorted_freqs_filename, 'wb') as f2: 
+            pickle.dump(sorted_freqs, f2) 
 
 def display_data():
     pass
